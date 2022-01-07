@@ -19,6 +19,7 @@
 		62D42BD52787EF1200470CB5 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD42787EF1200470CB5 /* GitHubAPI.swift */; };
 		62D42BD72787F4E700470CB5 /* GetUserManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD62787F4E700470CB5 /* GetUserManger.swift */; };
 		62D42BD92787F87500470CB5 /* KingfisherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD82787F87500470CB5 /* KingfisherWrapper.swift */; };
+		62D42BDB2787FB0A00470CB5 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BDA2787FB0A00470CB5 /* UserListViewModel.swift */; };
 		76379EB4ABFD8786B335B8EB /* Pods_GitHubUserList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D29455FCC8D5223401BF46 /* Pods_GitHubUserList.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		62D42BD42787EF1200470CB5 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		62D42BD62787F4E700470CB5 /* GetUserManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserManger.swift; sourceTree = "<group>"; };
 		62D42BD82787F87500470CB5 /* KingfisherWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherWrapper.swift; sourceTree = "<group>"; };
+		62D42BDA2787FB0A00470CB5 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		F9D29455FCC8D5223401BF46 /* Pods_GitHubUserList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubUserList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				62D42BD02787EE1300470CB5 /* Box.swift */,
 				62D42BD62787F4E700470CB5 /* GetUserManger.swift */,
 				62D42BD82787F87500470CB5 /* KingfisherWrapper.swift */,
+				62D42BDA2787FB0A00470CB5 /* UserListViewModel.swift */,
 			);
 			path = GitHubUserList;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				62D42BD52787EF1200470CB5 /* GitHubAPI.swift in Sources */,
 				62D42BD32787EEC800470CB5 /* NetworkProvider.swift in Sources */,
 				62D42BD72787F4E700470CB5 /* GetUserManger.swift in Sources */,
+				62D42BDB2787FB0A00470CB5 /* UserListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +392,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,6 +422,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -26,12 +26,12 @@ struct User: Codable {
     let eventsUrl: String
     let receivedEventsUrl: String
     let type: String
-    let siteAdmin: String
+    let siteAdmin: Bool
 
     enum CodingKeys: String, CodingKey {
         case login
         case id
-        case nodeId
+        case nodeId = "node_id"
         case avatarUrl = "avatar_url"
         case gravatarId = "gravatar_id"
         case url

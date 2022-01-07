@@ -23,7 +23,7 @@ protocol GitHubAPIProtocol {
 extension GitHubAPIProtocol {
 
     var host: String {
-        return "https://api.github.com/"
+        return "https://api.github.com"
     }
 
     var url: URL {
