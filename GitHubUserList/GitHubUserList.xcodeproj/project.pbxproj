@@ -14,6 +14,7 @@
 		62D42BC42787E0EA00470CB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D42BC32787E0EA00470CB5 /* Assets.xcassets */; };
 		62D42BC72787E0EA00470CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D42BC52787E0EA00470CB5 /* LaunchScreen.storyboard */; };
 		62D42BCF2787ED6600470CB5 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BCE2787ED6600470CB5 /* UserDataModel.swift */; };
+		62D42BD12787EE1300470CB5 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD02787EE1300470CB5 /* Box.swift */; };
 		76379EB4ABFD8786B335B8EB /* Pods_GitHubUserList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D29455FCC8D5223401BF46 /* Pods_GitHubUserList.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		62D42BC62787E0EA00470CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62D42BC82787E0EA00470CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D42BCE2787ED6600470CB5 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		62D42BD02787EE1300470CB5 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		F9D29455FCC8D5223401BF46 /* Pods_GitHubUserList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubUserList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				62D42BC52787E0EA00470CB5 /* LaunchScreen.storyboard */,
 				62D42BC82787E0EA00470CB5 /* Info.plist */,
 				62D42BCE2787ED6600470CB5 /* UserDataModel.swift */,
+				62D42BD02787EE1300470CB5 /* Box.swift */,
 			);
 			path = GitHubUserList;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				62D42BBF2787E0E800470CB5 /* ViewController.swift in Sources */,
 				62D42BBB2787E0E800470CB5 /* AppDelegate.swift in Sources */,
 				62D42BBD2787E0E800470CB5 /* SceneDelegate.swift in Sources */,
+				62D42BD12787EE1300470CB5 /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
