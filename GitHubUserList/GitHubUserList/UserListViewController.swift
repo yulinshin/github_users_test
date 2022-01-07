@@ -8,8 +8,9 @@
 import UIKit
 import Kingfisher
 import MJRefresh
+import CoreAudio
 
-class ViewController: UIViewController {
+class UserListViewController: UIViewController {
 
     var tableView: UITableView = {
         var table = UITableView()
@@ -58,7 +59,7 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.list.count
     }
@@ -66,12 +67,22 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let viewModel = viewModel.list[indexPath.row]
-        if let textlabel = cell.textLabel,
+        if let textLabel = cell.textLabel,
            let imageView = cell.imageView {
-            textlabel.text = "\(viewModel.login.value), isAdmin: \(viewModel.isSiteAdmin.value)"
+            textLabel.text = "\(viewModel.login.value), isAdmin: \(viewModel.isSiteAdmin.value)"
             imageView.loadImage(viewModel.avatarUrl.value)
         }
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let useLogin = viewModel.list[indexPath.row].login.value
+        let viewController = UserDetailViewController(userLogin: useLogin)
+
+        self.navigationController?.pushViewController(viewController, animated: true)
+
+    }
+
 
 }

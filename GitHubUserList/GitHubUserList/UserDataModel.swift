@@ -28,6 +28,15 @@ struct User: Codable {
     let type: String
     let siteAdmin: Bool
 
+    // for UserDetail
+    let userName: String?
+    let userEmail: String?
+    let userBio: String?
+    let publicRepos: Int?
+    let publicGists: Int?
+    let followers: Int?
+    let following: Int?
+
     enum CodingKeys: String, CodingKey {
         case login
         case id
@@ -47,5 +56,15 @@ struct User: Codable {
         case receivedEventsUrl = "received_events_url"
         case type
         case siteAdmin = "site_admin"
+
+        // for UserDetail
+        case userName = "name"
+        case userEmail = "email"
+        case userBio = "bio"
+        case publicRepos = "public_Repos"
+        case publicGists = "public_Gists"
+        case followers
+        case following
+
     }
 }
