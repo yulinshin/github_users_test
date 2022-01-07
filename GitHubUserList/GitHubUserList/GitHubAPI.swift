@@ -42,7 +42,7 @@ extension GitHubAPIProtocol {
 
 enum UsersAPI: GitHubAPIProtocol {
 
-    case list(paging: Int)
+    case list(since: Int)
     case search(user: String)
 
     var basePath: String {
@@ -51,8 +51,8 @@ enum UsersAPI: GitHubAPIProtocol {
 
     var additionalPath: String {
         switch self {
-        case let .list(paging: paging):
-            return "?per_page=20&page=\(paging)"
+        case let .list(since: since):
+            return "?since=\(since)&per_page=20"
         case let .search(user: user):
             return "/\(user)"
         }

@@ -18,7 +18,6 @@ class NetworkProvider {
     }
 
     private let urlSession: URLSession = .shared
-    private let currentPage: Int = 0
 
     func fetchObject<Object>(api: GitHubAPIProtocol, type: Object.Type, completion: @escaping (Result<Object, Error>) -> Void) where Object: Decodable {
         fetchData(api: api) { result in
@@ -26,6 +25,7 @@ class NetworkProvider {
             case let .success(data):
                 let object = try! JSONDecoder().decode(Object.self, from: data)
                 completion(.success(object))
+                print(api.url)
             case let .failure(error):
                 completion(.failure(error))
             }

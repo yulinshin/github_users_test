@@ -69,8 +69,14 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
         let viewModel = viewModel.list[indexPath.row]
         if let textLabel = cell.textLabel,
            let imageView = cell.imageView {
-            textLabel.text = "\(viewModel.login.value), isAdmin: \(viewModel.isSiteAdmin.value)"
-            imageView.loadImage(viewModel.avatarUrl.value)
+            viewModel.login.bind { login in
+                viewModel.isSiteAdmin.bind { isSiteAdmin in
+                    textLabel.text = "\(login), isAdmin: \(isSiteAdmin)"
+                }
+            }
+            viewModel.avatarUrl.bind { url in
+                imageView.loadImage(viewModel.avatarUrl.value)
+            }
         }
         return cell
     }
