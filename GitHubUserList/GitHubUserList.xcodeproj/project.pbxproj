@@ -17,6 +17,7 @@
 		62D42BD12787EE1300470CB5 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD02787EE1300470CB5 /* Box.swift */; };
 		62D42BD32787EEC800470CB5 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD22787EEC800470CB5 /* NetworkProvider.swift */; };
 		62D42BD52787EF1200470CB5 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD42787EF1200470CB5 /* GitHubAPI.swift */; };
+		62D42BD72787F4E700470CB5 /* GetUserManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD62787F4E700470CB5 /* GetUserManger.swift */; };
 		76379EB4ABFD8786B335B8EB /* Pods_GitHubUserList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D29455FCC8D5223401BF46 /* Pods_GitHubUserList.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		62D42BD02787EE1300470CB5 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		62D42BD22787EEC800470CB5 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		62D42BD42787EF1200470CB5 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		62D42BD62787F4E700470CB5 /* GetUserManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserManger.swift; sourceTree = "<group>"; };
 		F9D29455FCC8D5223401BF46 /* Pods_GitHubUserList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubUserList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 				62D42BC82787E0EA00470CB5 /* Info.plist */,
 				62D42BCE2787ED6600470CB5 /* UserDataModel.swift */,
 				62D42BD02787EE1300470CB5 /* Box.swift */,
+				62D42BD62787F4E700470CB5 /* GetUserManger.swift */,
 			);
 			path = GitHubUserList;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				62D42BD12787EE1300470CB5 /* Box.swift in Sources */,
 				62D42BD52787EF1200470CB5 /* GitHubAPI.swift in Sources */,
 				62D42BD32787EEC800470CB5 /* NetworkProvider.swift in Sources */,
+				62D42BD72787F4E700470CB5 /* GetUserManger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
