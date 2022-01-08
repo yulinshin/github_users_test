@@ -85,26 +85,114 @@
 		62D42BB92787E0E800470CB5 /* GitHubUserList */ = {
 			isa = PBXGroup;
 			children = (
-				62D42BBA2787E0E800470CB5 /* AppDelegate.swift */,
-				62D42BBC2787E0E800470CB5 /* SceneDelegate.swift */,
+				62EC52A527896D8700C75343 /* Network */,
+				62EC529C27896C9700C75343 /* Top */,
+				62EC52A327896D3300C75343 /* Model */,
+				62EC52A427896D6300C75343 /* Third Party Wrapper */,
+				62EC529D27896CA800C75343 /* UserListPage */,
+				62EC529E27896CC300C75343 /* userDetailPage */,
+				62EC52A627896DA100C75343 /* Source */,
+			);
+			path = GitHubUserList;
+			sourceTree = "<group>";
+		};
+		62EC529C27896C9700C75343 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				62D42BD02787EE1300470CB5 /* Box.swift */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		62EC529D27896CA800C75343 /* UserListPage */ = {
+			isa = PBXGroup;
+			children = (
+				62EC529F27896CDA00C75343 /* View */,
+				62EC52A027896D0100C75343 /* ViewMode */,
+			);
+			path = UserListPage;
+			sourceTree = "<group>";
+		};
+		62EC529E27896CC300C75343 /* userDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				62EC52A127896D0C00C75343 /* View */,
+				62EC52A227896D1400C75343 /* ViewModel */,
+			);
+			path = userDetailPage;
+			sourceTree = "<group>";
+		};
+		62EC529F27896CDA00C75343 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62EC52982789667200C75343 /* UserListTableViewCell.swift */,
+				62EC52992789667200C75343 /* UserListTableViewCell.xib */,
 				62D42BBE2787E0E800470CB5 /* UserListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62EC52A027896D0100C75343 /* ViewMode */ = {
+			isa = PBXGroup;
+			children = (
+				62D42BDA2787FB0A00470CB5 /* UserListViewModel.swift */,
+			);
+			path = ViewMode;
+			sourceTree = "<group>";
+		};
+		62EC52A127896D0C00C75343 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				621ACD942788283800D4127A /* UserDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62EC52A227896D1400C75343 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				621ACD962788322200D4127A /* UserDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62EC52A327896D3300C75343 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62D42BD62787F4E700470CB5 /* GetUserManger.swift */,
+				62D42BCE2787ED6600470CB5 /* UserDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62EC52A427896D6300C75343 /* Third Party Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				62D42BD82787F87500470CB5 /* KingfisherWrapper.swift */,
+			);
+			path = "Third Party Wrapper";
+			sourceTree = "<group>";
+		};
+		62EC52A527896D8700C75343 /* Network */ = {
+			isa = PBXGroup;
+			children = (
 				62D42BD22787EEC800470CB5 /* NetworkProvider.swift */,
 				62D42BD42787EF1200470CB5 /* GitHubAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		62EC52A627896DA100C75343 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				62D42BBA2787E0E800470CB5 /* AppDelegate.swift */,
+				62D42BBC2787E0E800470CB5 /* SceneDelegate.swift */,
 				62D42BC02787E0E800470CB5 /* Main.storyboard */,
 				62D42BC32787E0EA00470CB5 /* Assets.xcassets */,
 				62D42BC52787E0EA00470CB5 /* LaunchScreen.storyboard */,
 				62D42BC82787E0EA00470CB5 /* Info.plist */,
-				62D42BCE2787ED6600470CB5 /* UserDataModel.swift */,
-				62D42BD02787EE1300470CB5 /* Box.swift */,
-				62D42BD62787F4E700470CB5 /* GetUserManger.swift */,
-				62D42BD82787F87500470CB5 /* KingfisherWrapper.swift */,
-				62D42BDA2787FB0A00470CB5 /* UserListViewModel.swift */,
-				621ACD942788283800D4127A /* UserDetailViewController.swift */,
-				621ACD962788322200D4127A /* UserDetailViewModel.swift */,
-				62EC52982789667200C75343 /* UserListTableViewCell.swift */,
-				62EC52992789667200C75343 /* UserListTableViewCell.xib */,
 			);
-			path = GitHubUserList;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		74E5704FF1CE081171249974 /* Pods */ = {
@@ -404,7 +492,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 94F23Z62YB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubUserList/Info.plist;
+				INFOPLIST_FILE = GitHubUserList/Source/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -434,7 +522,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 94F23Z62YB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubUserList/Info.plist;
+				INFOPLIST_FILE = GitHubUserList/Source/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
