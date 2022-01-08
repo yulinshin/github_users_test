@@ -22,6 +22,8 @@
 		62D42BD72787F4E700470CB5 /* GetUserManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD62787F4E700470CB5 /* GetUserManger.swift */; };
 		62D42BD92787F87500470CB5 /* KingfisherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BD82787F87500470CB5 /* KingfisherWrapper.swift */; };
 		62D42BDB2787FB0A00470CB5 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D42BDA2787FB0A00470CB5 /* UserListViewModel.swift */; };
+		62EC529A2789667200C75343 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC52982789667200C75343 /* UserListTableViewCell.swift */; };
+		62EC529B2789667200C75343 /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62EC52992789667200C75343 /* UserListTableViewCell.xib */; };
 		76379EB4ABFD8786B335B8EB /* Pods_GitHubUserList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D29455FCC8D5223401BF46 /* Pods_GitHubUserList.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		62D42BD62787F4E700470CB5 /* GetUserManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserManger.swift; sourceTree = "<group>"; };
 		62D42BD82787F87500470CB5 /* KingfisherWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherWrapper.swift; sourceTree = "<group>"; };
 		62D42BDA2787FB0A00470CB5 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		62EC52982789667200C75343 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		62EC52992789667200C75343 /* UserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewCell.xib; sourceTree = "<group>"; };
 		F9D29455FCC8D5223401BF46 /* Pods_GitHubUserList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubUserList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +101,8 @@
 				62D42BDA2787FB0A00470CB5 /* UserListViewModel.swift */,
 				621ACD942788283800D4127A /* UserDetailViewController.swift */,
 				621ACD962788322200D4127A /* UserDetailViewModel.swift */,
+				62EC52982789667200C75343 /* UserListTableViewCell.swift */,
+				62EC52992789667200C75343 /* UserListTableViewCell.xib */,
 			);
 			path = GitHubUserList;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62EC529B2789667200C75343 /* UserListTableViewCell.xib in Resources */,
 				62D42BC72787E0EA00470CB5 /* LaunchScreen.storyboard in Resources */,
 				62D42BC42787E0EA00470CB5 /* Assets.xcassets in Resources */,
 				62D42BC22787E0E800470CB5 /* Main.storyboard in Resources */,
@@ -236,6 +243,7 @@
 				62D42BCF2787ED6600470CB5 /* UserDataModel.swift in Sources */,
 				62D42BBF2787E0E800470CB5 /* UserListViewController.swift in Sources */,
 				62D42BBB2787E0E800470CB5 /* AppDelegate.swift in Sources */,
+				62EC529A2789667200C75343 /* UserListTableViewCell.swift in Sources */,
 				62D42BBD2787E0E800470CB5 /* SceneDelegate.swift in Sources */,
 				62D42BD12787EE1300470CB5 /* Box.swift in Sources */,
 				62D42BD92787F87500470CB5 /* KingfisherWrapper.swift in Sources */,

@@ -6,15 +6,14 @@
 //
 
 import UIKit
-import Kingfisher
 import MJRefresh
-import CoreAudio
 
 class UserListViewController: UIViewController {
 
     var tableView: UITableView = {
         var table = UITableView()
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        let nib = UINib(nibName: UserListTableViewCell.identifier, bundle: nil)
+        table.register(nib, forCellReuseIdentifier: UserListTableViewCell.identifier)
         return table
     }()
 
@@ -65,19 +64,18 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserListTableViewCell.identifier, for: indexPath) as? UserListTableViewCell else { return UITableViewCell() }
         let viewModel = viewModel.list[indexPath.row]
-        if let textLabel = cell.textLabel,
-           let imageView = cell.imageView {
-            viewModel.login.bind { login in
-                viewModel.isSiteAdmin.bind { isSiteAdmin in
-                    textLabel.text = "\(login), isAdmin: \(isSiteAdmin)"
-                }
+
+        viewModel.login.bind { login in
+            cell.userLoginLabel.text = login
             }
-            viewModel.avatarUrl.bind { url in
-                imageView.loadImage(viewModel.avatarUrl.value)
-            }
+        viewModel.isSiteAdmin.bind { isSiteAdmin in
+            cell.isAdminLabel.text = "isAdmin: \(isSiteAdmin)"
         }
+        viewModel.avatarUrl.bind { url in
+            cell.userImageView.loadImage(viewModel.avatarUrl.value)
+            }
         return cell
     }
 
@@ -88,6 +86,10 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
 
         self.navigationController?.pushViewController(viewController, animated: true)
 
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
 
 
